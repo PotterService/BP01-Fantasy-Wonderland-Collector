@@ -1,189 +1,56 @@
-# BP01 Fantasy Wonderland Collector
+# BP01 Fantasy Wonderland Collector Tool
 
-A fan-made collection tracker for the **BP01 Fantasy Wonderland** set from the **Kayou My Little Pony Card Game**.
+Standalone fan-made collector tool for the Kayou My Little Pony Card Game BP01 set.
 
-This project was created by **Bow** to provide collectors with an easy way to:
+Planned domain:
 
-* Track owned cards
-* Track duplicate cards
-* Create a wishlist
-* View card images
-* View card rarities
-* View pull odds
-* Track collection completion
-* Export collection data
-* Backup and restore local collections
-* Print binder-friendly pages
-
----
-
-## Live Website
-
-https://BP01.PotterService.com
-
----
-
-## Main MLP Collection Tracker
-
-Looking for all MLP sets?
-
-https://MLP.PotterService.com
-
----
+https://BP01.potterservice.com
 
 ## Features
 
-### Collection Tracking
+- 173 BP01 cards
+- Card image gallery
+- Card names and numbers
+- Rarity filters
+- Search
+- Owned tracking
+- Quantity tracking
+- Duplicate tracking
+- Wishlist tracking
+- Pull odds under each card
+- Pull odds guide
+- Backup/import collection JSON
+- Export CSV checklist
+- Print-friendly binder view
 
-* Mark cards as owned
-* Track quantities
-* Track duplicates
-* Wishlist support
-* Collection statistics
+## Data Source
 
-### Card Information
-
-* Card images
-* Card names
-* Card numbers
-* Rarity information
-* Pull odds information
-
-### Collector Tools
-
-* CSV exports
-* JSON backups
-* Import backups
-* Binder-friendly printing
-* Search and filtering
-
-### Analytics
-
-Google Analytics support has been added to help track project usage and improve future releases.
-
----
-
-## Pull Odds
-
-The project includes simplified pull odds based on information available from the community and wiki resources.
-
-Examples include:
-
-* Common
-* Uncommon
-* Sapphire Rare
-* Emerald Rare
-* Silver Rare
-* Gold Rare
-* Colorful Rare
-* Ruby Rare
-* Shining Variants
-
-These odds are intended as collector references and may vary between print runs.
-
----
-
-## Versions
-
-### Version 1.0
-
-Initial release.
-
-Features:
-
-* BP01 card database
-* Card image gallery
-* Search system
-* Owned tracking
-* Duplicate tracking
-* Wishlist tracking
-
----
-
-### Version 1.1
-
-Added:
-
-* Collection statistics
-* Export tools
-* Backup system
-* Import system
-
----
-
-### Version 1.2
-
-Added:
-
-* Pull odds guide
-* Improved rarity support
-* Better filtering
-
----
-
-### Version 1.3
-
-Added:
-
-* Print-friendly binder view
-* Mobile improvements
-* Collection completion tracking
-
----
-
-### Version 1.4
-
-Added:
-
-* Google Analytics integration
-* Custom BP01 page tracking
-* Main MLP Collection Tracker button
-* Event tracking for major collector actions
-
----
-
-## Credits
-
-Special thanks to the contributors and community members who have helped document Kayou My Little Pony cards.
-
-Information used by this project was gathered from public community resources including:
-
-* Kayou My Little Pony Card Game Wiki
-* Collector communities
-* Publicly shared checklist projects
-
----
+Original set page:
+https://kayoumylittleponycardgame.miraheze.org/wiki/BP01_set_list
 
 ## Disclaimer
 
-This is a fan-made collector project.
+Fan-made collector tool. Bow is not affiliated with Kayou, Hasbro, My Little Pony, Miraheze, or the wiki.
 
-Bow is not affiliated with, endorsed by, sponsored by, or connected to:
 
-* Kayou
-* Hasbro
-* My Little Pony
-* Miraheze
-* The Kayou My Little Pony Card Game Wiki
+## Analytics
 
-All trademarks, logos, card images, card names, and intellectual property belong to their respective owners.
+Google Analytics tracking has been added using measurement ID:
 
-This project is intended for collection tracking and educational reference purposes only.
+G-ELQSW0TEBE
 
----
+This site reports the page title as:
 
-## Future Plans
+BP01 Home Page
 
-Planned features include:
+and the page path as:
 
-* Additional card information
-* Better image support
-* Binder export improvements
-* Collection sharing
-* Additional statistics
-* Printable checklist exports
-* Future set support
+/bp01-home
 
----
+This helps separate BP01 traffic from the main MLP tracker when using the same analytics property.
 
-Designed and maintained by Bow.
+## Main Tracker Link
+
+The top navigation includes a button to:
+
+https://mlp.potterservice.com

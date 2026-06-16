@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BP01 Fantasy Wonderland Collector Tool</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELQSW0TEBE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ELQSW0TEBE', {
+    page_title: 'BP01 Home Page',
+    page_path: '/bp01-home'
+  });
+
+  function trackEvent(eventName) {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName);
+    }
+  }
+</script>
+
+</head>
+<body>
+<header class="hero">
+  <nav class="top-actions">
+    <a href="https://BP01.potterservice.com" onclick="trackEvent('bp01_home_click')">BP01.potterservice.com</a>
+    <a href="https://mlp.potterservice.com" target="_blank" rel="noopener" onclick="trackEvent('visit_main_mlp_tracker_click')">Visit Main MLP Collection Tracker</a>
+    <a href="https://kayoumylittleponycardgame.miraheze.org/wiki/BP01_set_list" target="_blank" rel="noopener" onclick="trackEvent('bp01_wiki_set_list_click')">Original Wiki Set List</a>
+    <button id="backupBtn" onclick="trackEvent('bp01_backup_collection_click')">Backup Collection</button>
+    <label class="btn">Import Backup<input id="importFile" type="file" accept="application/json" hidden></label>
+  </nav>
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Kayou My Little Pony Card Game</p>
+      <h1>BP01 Fantasy Wonderland</h1>
+      <p class="subtitle">A fan-made collector tool for tracking BP01 cards, images, rarities, pull odds, duplicates, wishlist cards, and binder progress.</p>
+      <div class="hero-buttons">
+        <button onclick="trackEvent('bp01_view_all_cards_click'); setView('all')">View All Cards</button>
+        <button onclick="trackEvent('bp01_missing_cards_click'); setView('missing')">Missing Cards</button>
+        <button onclick="trackEvent('bp01_owned_cards_click'); setView('owned')">Owned Cards</button>
+        <button onclick="trackEvent('bp01_print_binder_click'); window.print()">Print Binder View</button>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h2>Set Info</h2>
+      <p><strong>Set:</strong> BP01 Fantasy Wonderland</p>
+      <p><strong>Total Cards:</strong> <span id="totalCards">0</span></p>
+      <p><strong>Rarities:</strong> 13</p>
+      <p><strong>Pull Odds:</strong> Simplified from the production ratio table.</p>
+    </aside>
+  </div>
+</header>
+
+<section class="stats">
+  <article><b id="statShowing">0</b><span>Showing</span></article>
+  <article><b id="statOwned">0</b><span>Owned</span></article>
+  <article><b id="statMissing">0</b><span>Missing</span></article>
+  <article><b id="statDupes">0</b><span>Duplicates</span></article>
+  <article><b id="statPercent">0%</b><span>Completion</span><div class="bar"><i id="progressBar"></i></div></article>
+</section>
+
+<section class="filters">
+  <input id="searchInput" placeholder="Search card name, number, rarity, or odds...">
+  <select id="rarityFilter"><option value="">All Rarities</option></select>
+  <select id="statusFilter">
+    <option value="all">All Cards</option>
+    <option value="owned">Owned</option>
+    <option value="missing">Missing</option>
+    <option value="wishlist">Wishlist</option>
+    <option value="dupes">Duplicates</option>
+  </select>
+  <button id="clearBtn">Clear</button>
+  <button id="exportCsvBtn" onclick="trackEvent('bp01_export_csv_click')">Export CSV</button>
+</section>
+
+<section class="odds-guide">
+  <h2>Pull Odds Guide</h2>
+  <div class="odds-grid" id="oddsGrid"></div>
+</section>
+
+<main id="cardsGrid" class="cards-grid"></main>
+
+<footer>
+  <strong>BP01 Fantasy Wonderland Collector Tool</strong>
+  <p>Fan-made collector project by Bow. Card names/images and ratio reference come from the Kayou My Little Pony Card Game wiki page. All trademarks and card images belong to their respective owners.</p>
+</footer>
+
+<dialog id="cardDialog">
+  <button id="closeDialog" class="close">×</button>
+  <div id="dialogContent"></div>
+</dialog>
+
+<script src="data/cards.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
